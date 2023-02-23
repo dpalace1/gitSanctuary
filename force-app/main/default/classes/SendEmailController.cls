@@ -13,7 +13,7 @@ public with sharing class SendEmailController {
         Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage();
         email.setToAddresses(new List<String>{emailAddress});
         email.setPlainTextBody(emailMessage);
-        email.setSaveAsActivity(false);
+        //email.setSaveAsActivity(false);
         Messaging.sendEmail(new List<Messaging.SingleEmailMessage>{email});
     }
 }
